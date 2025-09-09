@@ -55,14 +55,14 @@ label {
     background-color: var(--drk-clr);
 }
 
-.frm-txt { padding: 1em; height: 200px; width: 55rem;}
-
 .act-frm {
     display: flex;
     gap: 2rem;
     padding: 20px;
     border: solid 3px white;
 }
+
+.frm-txt { padding: 1em; height: 200px; width: 55rem;}
 
 .scnd-sec, .fst-sec {
     border: solid 3px white;
