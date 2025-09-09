@@ -9,12 +9,42 @@
 <body>
     <div class="main">
         <div class="side-img">
-            <img src="./images/Travis_Scott_-_Utopia.png" alt="Utopia album cover">
+            <img class="card" src="./images/Travis_Scott_-_Utopia.png" alt="Utopia album cover" height="">
         </div>
         <div class="form-side">
-            <p>This is not a site for non Travis fans because what you will expierence there is out of this world. <br />
-                Our site provides real Utopian expierence - sign up to be a part of Utopia.</p>
+            <div class="frm-txt">
+            <p>* Greetings from UTOPIA<br><br>This is a site created for the best Utopian - experience possible <br>what you will see there is out of this world.<br><br>Sign up to be a part of Utopia.</p>
+        </div>
+            <div class="frm">
+                <form action="https://httpbin.org/post" method="post">
+                    <div class="act-frm">
+                        <div class="fst-sec">
+                            <p>
+                                <label for="user_first_name">NAME</label>
+                                <input type="text" id="user_first_name" name="user_first_name" required>
+                            </p>
+                            <p>
+                                <label for="user_mail">EMAIL</label>
+                                <input type="text" id="user_mail" name="user_mail" required>
+                            </p>
+                        
+                        
+                                <label for="user_password">PASSWORD</label>
+                                <input type="password" id="user_password" name="user_password" required>
+                        </div>
+                        <div class="scnd-sec">
+                                <label for="user_last_name">LAST NAME</label>
+                                <input type="text" id="user_last_name" name="user_last_name" required>
+                                
+                                <label for="user_number">NUMBER</label>
+                                <input type="number" id="user_number" name="user_number">
 
+                                <label for="user_confirm_password">CONFIRM PASSWORD</label>
+                                <input type="password" id="user_confirm_password" name="user_confirm_password">
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </body>
