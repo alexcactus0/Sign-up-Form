@@ -1,0 +1,23 @@
+:root {
+    --bcg-clr: rgba(0, 0, 0, 0.921);
+    background: var(--bcg-clr);
+}
+
+* {  margin: 0; padding: 0; }
+
+html, body { height: 100%;}
+
+body { overflow: hidden; display: flex; justify-content: center; align-items: center; flex: 1; }
+
+.side-img {
+    background-image: "https://en.wikipedia.org/wiki/File:Travis_Scott_-_Utopia.png";
+    
+}   
+
+.main {
+    border: solid 3px white;
+    display: flex;
+    height: 40rem;
+    width: 100%;
+}
+
