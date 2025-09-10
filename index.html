@@ -25,12 +25,12 @@
                             </p>
                             <p>
                                 <label for="user_mail">EMAIL</label>
-                                <input type="text" id="user_mail" name="user_mail">
+                                <input type="text" id="user_mail" name="user_mail" pattern=".+@.+\..+">
                             </p>
                         
                             <p>
                                 <label for="user_password">PASSWORD</label>
-                                <input type="password" id="user_password" name="user_password" placeholder="Enter password" min="8" max="12" required>
+                                <input type="password" id="user_password" name="user_password" placeholder="Enter password" min="8" max="12" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
                             </p>
                         </div>
                         <div class="scnd-sec">
@@ -40,7 +40,7 @@
                             </p>
                             <p>   
                                 <label for="user_number">PHONE NUMBER</label>
-                                <input type="tel" id="user_number" name="user_number" max="12">
+                                <input type="tel" id="user_number" name="user_number" max="12" pattern="[0-9]{10,}">
                             </p>
                             <p>
                                 <label for="user_confirm_password">CONFIRM PASSWORD</label>

@@ -53,10 +53,10 @@ label {
 }
 
 /* Input fields */
-input { box-sizing: border-box; padding: 10px; height: 2.2rem; width: 16rem; font-weight: bold; border-radius: 6px; border: none; font-family: 'Open Sans'; }
+input { box-sizing: border-box; padding: 10px; height: 2.2rem; width: 16rem; font-weight: bold; border-radius: 6px; border: solid 2px rgb(84, 80, 80); font-family: 'Open Sans'; }
 input:focus { outline: none; box-shadow: 0 0 7px var(--blue-shdw); border: solid 2px var(--blue-shdw); }
 input[type="password"]:invalid { box-shadow: none; border: solid 2px rgb(161, 5, 5); background-color: rgb(229, 167, 167); }
-input::placeholder { color: rgb(170, 145, 145); }
+input::placeholder { color: rgb(56, 48, 48); }
 
 
 /* Buttons styles */
