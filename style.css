@@ -5,6 +5,7 @@
     --txt-clr: rgba(255, 255, 255, 0.87);
     --shdw-clr: 5px 5px 25px rgba(98, 92, 92, 0.2);
     --lighter-shdw: 5px 5px 25px rgba(115, 97, 97, 0.338);
+    --blue-shdw: rgb(73, 193, 212);
     background: var(--bcg-clr);
 }
 
@@ -51,11 +52,14 @@ label {
     color: rgb(166, 164, 164);
 }
 
-input { width: 16em; border-radius: 6px; border: none; }
-input:hover { border: solid 2px rgb(70, 70, 218); }
-input:invalid { border: solid 2px red; }
-input:valid { border: solid 2px rgb(5, 201, 5); }
+/* Input fields */
+input { box-sizing: border-box; padding: 10px; height: 2.2rem; width: 16rem; font-weight: bold; border-radius: 6px; border: none; font-family: 'Open Sans'; }
+input:focus { outline: none; box-shadow: 0 0 7px var(--blue-shdw); border: solid 2px var(--blue-shdw); }
+input[type="password"]:invalid { box-shadow: none; border: solid 2px rgb(161, 5, 5); background-color: rgb(229, 167, 167); }
+input::placeholder { color: rgb(170, 145, 145); }
 
+
+/* Buttons styles */
 button:hover { cursor: pointer; background-color: rgb(103, 71, 71); }
 button:active { top: 6px; }
 button { width: 12em; height: 2.5em; font-weight: bold; font-size: 0.6em; color: var(--txt-clr); background-color: rgb(109, 49, 49);
@@ -67,6 +71,7 @@ a { text-decoration: none; color: rgb(109, 49, 49); }
 a:hover { color: rgb(103, 71, 71); }
 .submit-btn p:last-child { font-size: 16px; }
 
+/* Form styles */
 .form-side {
     background-color: var(--drk-clr);
     display: flex;
