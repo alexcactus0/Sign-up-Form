@@ -10,8 +10,8 @@
 
 @font-face {
     font-family: 'Open Sans';
-    src: url('/fonts/OpenSans-Light.woff2') format('woff2'),
-        url('/fonts/OpenSans-Light.woff') format('woff');
+    src: url('./fonts/OpenSans-Light.woff2') format('woff2'),
+        url('./fonts/OpenSans-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -22,7 +22,7 @@
 
 html, body { height: 100%; }
 
-body { overflow: hidden; display: flex; justify-content: center; align-items: center; flex: 1; 
+body { overflow: hidden; display: flex; justify-content: center; align-items: center; 
     font-family: 'Open Sans'; color: var(--txt-clr); font-weight: bold; font-size: 1.5em;
 }
 
@@ -50,6 +50,11 @@ label {
     font-size: 13px;
     color: rgb(166, 164, 164);
 }
+
+input { width: 16em; border-radius: 6px; border: none; }
+input:hover { border: solid 2px rgb(70, 70, 218); }
+input:invalid { border: solid 2px red; }
+input:valid { border: solid 2px rgb(5, 201, 5); }
 
 button:hover { cursor: pointer; background-color: rgb(103, 71, 71); }
 button:active { top: 6px; }
