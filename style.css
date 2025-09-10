@@ -1,9 +1,11 @@
 :root {
     --bcg-clr: rgba(0, 0, 0, 0.921);
-    --drk-clr: rgba(24, 17, 17, 0.914);
+    --drk-clr: rgb(19, 15, 15);
+    --brn-clr: rgb(33, 24, 20);
     --txt-clr: rgba(255, 255, 255, 0.87);
+    --shdw-clr: 5px 5px 25px rgba(98, 92, 92, 0.2);
+    --lighter-shdw: 5px 5px 25px rgba(115, 97, 97, 0.338);
     background: var(--bcg-clr);
-
 }
 
 @font-face {
@@ -37,34 +39,54 @@ body { overflow: hidden; display: flex; justify-content: center; align-items: ce
 }
 
 .main {
-    border: solid 3px var(--txt-clr);
     display: flex;
-    
+    box-shadow: var(--lighter-shdw);
     height: 40rem;
     width: 100%;
 }
 
 label {
     display: block;
+    font-size: 13px;
+    color: rgb(166, 164, 164);
 }
 
-.form-side {
-    padding: 10px;
-   
+button:hover { cursor: pointer; background-color: rgb(103, 71, 71); }
+button:active { top: 6px; }
+button { width: 12em; height: 2.5em; font-weight: bold; font-size: 0.6em; color: var(--txt-clr); background-color: rgb(109, 49, 49);
+border-radius: 6px; border: none; box-shadow: var(--shdw-clr);
+}
+.submit-btn { padding: 25px; display: flex; flex-direction: column; gap: 1.3em;}
 
+a { text-decoration: none; color: rgb(109, 49, 49); }
+a:hover { color: rgb(103, 71, 71); }
+.submit-btn p:last-child { font-size: 16px; }
+
+.form-side {
     background-color: var(--drk-clr);
+    display: flex;
+    flex-direction: column;
 }
 
 .act-frm {
     display: flex;
     gap: 2rem;
     padding: 20px;
-    border: solid 3px white;
+    background-color: var(--brn-clr);
+    height: 8em;
+    box-shadow: var(--shdw-clr);
 }
+
+.frm-txt p::first-line { font-size: 26px; }
+.frm-txt p { font-size: smaller; }
 
 .frm-txt { padding: 1em; height: 200px; width: 55rem;}
 
 .scnd-sec, .fst-sec {
-    border: solid 3px white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 20rem;
+    height: 16rem;
 }
 
